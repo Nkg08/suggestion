@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Suggestion/img/NTPC-Logo.png" type="image/title-icon">
+    <title>Submit Your Suggestion</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">    
+    <link rel="stylesheet" type="text/css" href="submit.css?v=2">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <style>
+            .coolinput {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: static;
+  max-width: 240px;
+}
+
+.coolinput label.text {
+  font-size: 0.75rem;
+  color: #818CF8;
+  font-weight: 700;
+  position: relative;
+  top: 0.5rem;
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: #e8e8e8;
+  width: fit-content;
+}
+
+.coolinput input[type=text].input {
+  padding: 11px 10px;
+  font-size: 0.75rem;
+  border: 2px #818CF8 solid;
+  border-radius: 5px;
+  background: #e8e8e8;
+}
+
+.coolinput input[type=text].input:focus {
+  outline: none;
+}
+        </style>
+   
+
+</head>
+
+<body>
+
+    <div>
+
+        <div class="header">
+            <a href="/Suggestion/index.html" class="logo"><img src="/Suggestion/img/NTPC-Logo.png" alt="">Online Suggestion Scheme</a>
+            <div class="header-right" style="margin-top: 8px;">
+                <a class="active hvr-icon-pulse" href="/Suggestion/index.html">Home<i class="fa fa-home hvr-icon"></i></a>
+                <a href="#contact" class="hvr-icon-buzz-out">Logout <i class="fa fa-lock hvr-icon"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="main-body">
+        <div class="sidebar">
+
+            
+    
+            <div>
+                <div class="card">
+                    <img src="/Suggestion/img/submit.png" alt="Image">
+                    <a href="/Suggestion/Submit/submit.html" class="card-button">Submit Your Suggestion</a>
+                </div>
+    
+                <div class="card">
+                    <img src="/Suggestion/img/view.png" alt="Image">
+                    <a href="/Suggestion/viewYour/index.html" class="card-button">View Your Suggestion</a>
+                </div>
+    
+                <div class="card">
+                    <img src="/Suggestion/img/discussion.png" alt="Image">
+                    <a href="/Suggestion/Submit/viewAll.php" class="card-button">View All Suggestion</a>
+                </div>
+                <div class="card">
+                    <div id="thought-box"></div>
+                </div>
+            </div>
+    
+    
+        </div>
+     <div class="main">
+        <form action="submit.php" method="POST" enctype="multipart/form-data">
+            <div class="container">
+                
+                <h1 class="form-heading">Employee Suggestion Form</h1>
+
+                <h2 class="block-heading">I Wish To Give You Following Suggestion For Your Consideration <br>मैं
+                    निम्नलिखित सुझाव देने के लिए इच्छुक हूँ </h2>
+                
+                    
+
+                <label for="area_equipment">Area/Equipment Involved:</label>
+                <input type="text" id="area_equipment" name="area_equipment" class="input-field" required>
+
+                <label for="present_status">Present Status Of Problem:</label>
+                <input type="text" id="present_status" name="present_status" class="input-field" required>
+                <label for="suggested_solution">Suggested Solution:</label>
+                <input type="text" id="suggested_solution" name="suggested_solution" class="input-field" required>
+
+
+                <label>I honestly believe my idea will(Please Tick Mark() whichever is/are
+                    applicable) <br>में ईमानदारी से यह मानता/मानती हूँ, की मेरा सुझाव (कृपया उपयुक्त के आगे चिन्ह
+                    लगाये):</label>
+
+                <div class="tick-boxes">
+                    <div>
+                        <input type="checkbox" id="reduce_waste" name="impact_options[]" value="Reduce Waste/कचरा कम करेगा">
+                        <label for="reduce_waste">Reduce Waste/कचरा कम करेगा</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="reduce_cost" name="impact_options[]" value="reduce cost/अपव्य कम करेगा">
+                        <label for="reduce_cost">Reduce Cost/अपव्य कम करेगा</label>
+                    </div>
+                    <div><input type="checkbox" id="improve_efficiency" name="impact_options[]" value="Improve Efficiency/दक्षता में सुधार करेगा">
+                        <label for="improve_efficiency">Improve Efficiency/दक्षता में सुधार करेगा</label>
+    
+                    </div>
+                    <div>
+                        <input type="checkbox" id="productivity_improvement" name="impact_options[]" value="Productivity Improvement/उत्पादकता में सुधार करेगा">
+                        <label for="productivity_improvement"> Productivity Improvement/उत्पादकता में सुधार करेगा</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="improve_housekeeping" name="impact_options[]" value="Improve Housekeeping/गृह व्यवस्था में सुधार करेगा">
+                        <label for="improve_housekeeping">Improve Housekeeping/गृह व्यवस्था में सुधार करेगा</label>
+                    </div>
+                    <div><input type="checkbox" id="improve_safety" name="impact_options[]" value="Improve Safety/सुरक्षा बढ़ाएगा">
+                        <label for="improve_safety">Improve Safety/सुरक्षा बढ़ाएगा</label>
+    
+                    </div>
+                    <div>
+                        <input type="checkbox" id="enviromental_benefit" name="impact_options[]" value="Enviromental Benefit/वातावरण के हित में">
+                        <label for="enviromental_benefit"> Enviromental Benefit/वातावरण के हित में</label>
+                    </div>
+                    <div><input type="checkbox" id="improve_process" name="impact_options[]" value="Improve Process/कार्य विधि मेह सुधार करेगा">
+                        <label for="improve_process"> Improve Process/कार्य विधि मेह सुधार करेगा</label>
+    
+                    </div>  
+                </div>
+
+                <label for="any_other_improvement">Any Other Improvement/अन्य सुधार:</label>
+                <input type="text" id="any_other_improvement" name="any_other_improvement" class="input-field">
+
+                <label for="saving_status">Saving Status:</label>
+                <select id="saving_status" name="saving_status" class="input-field" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="One Time/एक बार बचत">One Time/एक बार बचत</option>
+                    <option value="Recurring/आवर्तक बचत">Recurring/आवर्तक बचत</option>
+                    <option value="No Saving/कोई बचत नहीं">No Saving/कोई बचत नहीं</option>
+                </select>
+                <label for="suggestion_details" style="resize: none;">Full Detail Of The Suggestion Along With Estimates Of The Saving Should
+                    Be Provided/अनुमानित बचत के साथ सुझाव का पूरा ब्योरा :</label>
+                <textarea id="suggestion_details" name="suggestion_details" rows="4" class="input-field"
+                    required></textarea>
+
+                
+                    <div class="file-upload">
+                        <label for="supporting_document">Attach A Supporting Document/File (if any):</label> <br>
+                        <label for="supporting_document" class="upload-btn">Upload File</label>
+                        <input type="file" id="supporting_document" name="supporting_document" onchange="updateFileName(this)">
+                        <span class="upload-label" id="file-name-label">No file chosen</span>
+                    </div>
+                    
+                
+
+                <p class="note" style="color: red; font-size: 12px;">
+                    Note: Please Verify The Information Which You Entered Before You Click The Submit Button,
+                    Because Once You Submit, It Cannot Be Modified.Thank You.
+                </p>
+
+               
+                <div class="form-btn">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+     </div>
+    </div>
+
+
+
+
+
+
+    </div>
+   <script>
+    const thoughts = [
+    "Offering suggestions fosters collaboration and teamwork, driving collective growth and success.",
+    "Sharing suggestions can provide fresh perspectives that lead to innovative solutions.",
+    "Giving thoughtful suggestions demonstrates your engagement and commitment to a project or task.",
+    "Suggesting improvements shows your dedication to constant learning and self-improvement.",
+    "Constructive suggestions can lead to enhanced efficiency and streamlined processes.",
+    "Offering ideas encourages open communication, creating a culture of continuous feedback.",
+    "Providing suggestions helps build trust and strengthens relationships within teams.",
+    "Sharing insights and recommendations highlights your expertise and value in a group.",
+    "Well-considered suggestions contribute to a culture of problem-solving and adaptability.",
+    "Offering suggestions can lead to better decision-making by considering diverse viewpoints.",
+    "Providing feedback and suggestions can lead to personal and professional growth for others.",
+    "Sharing ideas encourages a positive environment where everyone's input is valued.",
+    "Giving well-thought-out suggestions boosts your credibility and reputation as a resource.",
+    "Offering suggestions encourages a culture of learning from each other's experiences.",
+    "Providing recommendations can help others avoid mistakes and pitfalls you've encountered.",
+    "Suggesting improvements demonstrates your dedication to the success of the project.",
+    "Sharing suggestions fosters a sense of ownership and accountability in the team.",
+    "Offering guidance and insights can contribute to a more supportive and harmonious workplace.",
+    "Providing suggestions reinforces the idea that we're all on a journey of growth together.",
+    "Giving suggestions empowers individuals to contribute positively to the team's objectives."
+];
+
+const thoughtBox = document.getElementById("thought-box");
+let currentThoughtIndex = 0;
+
+function displayNextThought() {
+    thoughtBox.textContent = thoughts[currentThoughtIndex];
+    currentThoughtIndex = (currentThoughtIndex + 1) % thoughts.length;
+}
+
+displayNextThought(); 
+
+setInterval(displayNextThought, 5000); 
+
+
+   </script>
+    <script src="submit.js"></script>
+</body>
+
+</html>

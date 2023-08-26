@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Suggestion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div>
+        <nav>
+            <div class="logo">
+                <a href="/index.html"><img src="/img/NTPC-Logo.png" alt="Logo"></a>
+            </div>
+            <div class="head-bli">
+                <h1>Online Suggestion Scheme</h1>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="nav-links" id="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="#">Logout</a>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <div class="main-body">
+        <div class="sidebar">
+            <h4>Navigation</h4>
+            <div class="sidebar-btn" style="background-color: #7067C2;">
+                <!-- <div class="sidebar-btn--">
+
+                    <a href="#"><img src="/img/discussion.png" alt="" style="width: 24px;
+                    height: 24px;
+                    margin-right: 10px;">Submit Your Suggestion</a>
+                </div> -->
+                <div class="sidebar-btn--">
+                    <a href="/viewYour/index.html"><img src="/img/discussion.png" alt="" style="width: 24px;
+                    height: 24px;
+                    margin-right: 10px;">View Your Suggestion</a>
+                </div>
+                <div class="sidebar-btn--">
+                    <a href="/viewAll/index.html"><img src="/img/discussion.png" alt="" style="width: 24px;
+                    height: 24px;
+                    margin-right: 10px;">View All Suggestion</a>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">
+        <h1>Employee Designer Suggestion Form</h1>
+        <form id="suggestion-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+
+            <label for="position">Position:</label>
+            <input type="text" id="position" name="position" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="category">Suggestion Category:</label>
+            <select id="category" name="category" required>
+                <option value="" disabled selected>Select Category</option>
+                <option value="UI/UX">UI/UX</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Product Design">Product Design</option>
+                <option value="Packaging">Packaging</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="title">Title of Suggestion:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="rationale">Rationale:</label>
+            <textarea id="rationale" name="rationale" rows="4" required></textarea>
+
+            <label for="impact">Potential Impact:</label>
+            <textarea id="impact" name="impact" rows="4" required></textarea>
+
+            <label for="visual-aids">Visual Aids:</label>
+            <input type="file" id="visual-aids" name="visual-aids">
+
+            <label for="implementation">Implementation Ideas:</label>
+            <textarea id="implementation" name="implementation" rows="4" required></textarea>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div> -->
+        <form action="submit.php" method="POST">
+            <div class="container">
+                <h1 class="form-heading">Employee Suggestion Form</h1>
+
+                <h2 class="block-heading">I Wish To Give You Following Suggestion For Your Consideration <br>मैं
+                    निम्नलिखित सुझाव देने के लिए इच्छुक हूँ </h2>
+                <label for="area_equipment">Area/Equipment Involved:</label>
+                <input type="text" id="area_equipment" name="area_equipment" class="input-field" required>
+
+                <label for="present_status">Present Status Of Problem:</label>
+                <input type="text" id="present_status" name="present_status" class="input-field" required>
+                <label for="suggested_solution">Suggested Solution:</label>
+                <input type="text" id="suggested_solution" name="suggested_solution" class="input-field" required>
+
+
+                <label>I honestly believe my idea will(Please Tick Mark() whichever is/are
+                    applicable) <br>में ईमानदारी से यह मानता/मानती हूँ, की मेरा सुझाव (कृपया उपयुक्त के आगे चिन्ह
+                    लगाये):</label>
+
+                <div>
+                    <input type="checkbox" id="reduce_waste" name="impact_options[]" value="reduce_waste">
+                    <label for="reduce_waste">Reduce Waste</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="reduce_cost" name="impact_options[]" value="reduce_cost">
+                    <label for="reduce_cost">Reduce Cost</label>
+                </div>
+                <div><input type="checkbox" id="improve_efficiency" name="impact_options[]" value="improve_efficiency">
+                    <label for="improve_efficiency">Improve Efficiency/दक्षता में सुधार करेगा</label>
+
+                </div>
+                <div>
+                    <input type="checkbox" id="productivity_improvement" name="impact_options[]" value="productivity_improvement">
+                    <label for="productivity_improvement"> Productivity Improvement/उत्पादकता में सुधार करेगा</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="improve_housekeeping" name="impact_options[]" value="improve_housekeeping">
+                    <label for="improve_housekeeping">Improve Housekeeping/गृह व्यवस्था में सुधार करेगा</label>
+                </div>
+                <div><input type="checkbox" id="improve_safety" name="impact_options[]" value="improve_safety">
+                    <label for="improve_safety">Improve Safety/सुरक्षा बढ़ाएगा</label>
+
+                </div>
+                <div>
+                    <input type="checkbox" id="enviromental_benefit" name="impact_options[]" value="enviromental_benefit">
+                    <label for="enviromental_benefit"> Enviromental Benefit/वातावरण के हित में</label>
+                </div>
+                <div><input type="checkbox" id="improve_process" name="impact_options[]" value="improve_process">
+                    <label for="improve_process"> Improve Process/कार्य विधि मेह सुधार करेगा</label>
+
+                </div>
+
+                <label for="any_other_improvement">Any Other Improvement/अन्य सुधार:</label>
+                <input type="text" id="any_other_improvement" name="any_other_improvement" class="input-field">
+
+                <label for="saving_status">Saving Status:</label>
+                <select id="saving_status" name="saving_status" class="input-field" required>
+                    <option value="" disabled selected>Select Option</option>
+                    <option value="One Time">One Time/एक बार बचत:</option>
+                    <option value="Recurring">Recurring/आवर्तक बचत:</option>
+                    <option value="No Saving">No Saving/कोई बचत नहीं:</option>
+                </select>
+                <label for="suggestion_details">Full Detail Of The Suggestion Along With Estimates Of The Saving Should
+                    Be Provided/अनुमानित बचत के साथ सुझाव का पूरा ब्योरा :</label>
+                <textarea id="suggestion_details" name="suggestion_details" rows="4" class="input-field"
+                    required></textarea>
+
+                <label for="supporting_document">Attach A Supporting Document/File (if any):</label>
+                <input type="file" id="supporting_document" name="supporting_document" class="input-field">
+
+                <p class="note" style="color: red; font-size: 12px;">
+                    Note: Please Verify The Information Which You Entered Before You Click The Submit Button,
+                    Because Once You Submit, It Cannot Be Modified.Thank You.
+                </p>
+
+                <!-- Submit and Reset Buttons -->
+                <div class="form-btn">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
